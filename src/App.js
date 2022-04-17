@@ -24,6 +24,10 @@ function App() {
       <DisplayPosts parentPosts={posts} />
       <span>
         <CustomButton message="test button" />
+      </span>{" "}
+      <br></br>
+      <span>
+        <CustomButton message="test button 2" />
       </span>
     </div>
   );

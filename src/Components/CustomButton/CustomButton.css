@@ -1,0 +1,22 @@
+button{
+   
+    text-align: center;
+    display: inline;
+    font-size: 17px;
+  
+}
+
+/* When the button is not pushed  */
+.inactive{
+    background-color: gray;
+
+
+}
+
+/* When the button IS pushed  */
+.active{
+    background-color: blue;
+    color: white;
+
+
+}
