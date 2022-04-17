@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
+import CreatePosts from "./Components/CreatePost/CreatePost";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -10,6 +11,7 @@ function App() {
   ]);
   return (
     <div>
+      <CreatePosts />
       <DisplayPosts parentPosts={posts} />
     </div>
   );
