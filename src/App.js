@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import CreatePosts from "./Components/CreatePost/CreatePost";
+import CustomButton from "./Components/CustomButton/CustomButton";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -9,7 +10,7 @@ function App() {
       post: " ",
     },
   ]);
-
+  // function to add new posts to DisplayPosts component.
   function addNewPost(post) {
     // create a temporary variable to hold the posts
     let tempPosts = [...posts, post];
@@ -21,6 +22,9 @@ function App() {
     <div>
       <CreatePosts addNewPost={addNewPost} />
       <DisplayPosts parentPosts={posts} />
+      <span>
+        <CustomButton message="test button" />
+      </span>
     </div>
   );
 }
