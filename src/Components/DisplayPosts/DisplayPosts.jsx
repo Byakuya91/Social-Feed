@@ -12,20 +12,13 @@ const DisplayPosts = (props) => {
 
       {props.parentPosts.map((post)=>{
           return(
-
-            // <ul>
-            //    <li>{post.name}</li> 
-            //    <li>{post.post}</li> 
-            // </ul>
-
             <div>
               <h3>{post.name}</h3>
-              {post.post}
-
+              <p> {post.post}</p>
             </div>
              
            
-        
+  
              
           )
        })}   
