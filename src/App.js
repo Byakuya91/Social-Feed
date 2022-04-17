@@ -18,16 +18,20 @@ function App() {
     // updating the state variable by setting it equal to tempPosts
     setPosts(tempPosts);
   }
+  // create a toggle between buttons
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div>
       <CreatePosts addNewPost={addNewPost} />
       <DisplayPosts parentPosts={posts} />
+
       <span>
         <CustomButton message="test button" />
-      </span>{" "}
+      </span>
       <br></br>
       <span>
-        <CustomButton message="test button 2" />
+        <CustomButton message="test button2" />
       </span>
     </div>
   );
