@@ -9,9 +9,17 @@ function App() {
       post: "This is a test post.The characters should be on display. ",
     },
   ]);
+
+  function addNewPost(post) {
+    // create a temporary variable to hold the posts
+    let tempPosts = [...posts, post];
+
+    // updating the state variable by setting it equal to tempPosts
+    setPosts(tempPosts);
+  }
   return (
     <div>
-      <CreatePosts />
+      <CreatePosts addNewPost={addNewPost} />
       <DisplayPosts parentPosts={posts} />
     </div>
   );

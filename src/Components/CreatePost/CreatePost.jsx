@@ -9,16 +9,23 @@ const CreatePosts = (props) => {
     // creating a function to prevent the page from reloading 
     function handleSubmit(event){
         event.preventDefault();
+        // object to hold inputs and set them to the state variables values. 
+        let newEntry = {
+            name: name,
+            post: post
+        };
+        // console.log(newEntry);
+        props.addNewPost(newEntry);
     }
 
     return ( 
-       <form onSubmit={handleSubmit}> 
+    <form onSubmit={handleSubmit}> 
        <labeL>Name</labeL> 
        <input type="text" value={name}  onChange ={(event)=> setName(event.target.value) }/>  
        <labeL>Post</labeL> 
        <input type="text" value={post}onChange ={(event)=> setPost(event.target.value) } />
        <button type='submit'>create a post </button>
-       </form>
+    </form>
 
 
      );
