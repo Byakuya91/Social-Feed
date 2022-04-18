@@ -22,8 +22,8 @@ const CreatePosts = (props) => {
     <form onSubmit={handleSubmit}> 
        <labeL>Name</labeL> 
        <input type="text" value={name}  onChange ={(event)=> setName(event.target.value) }/>  
-       <labeL>Post</labeL> 
-       <input type="text" value={post}onChange ={(event)=> setPost(event.target.value) } />
+       <label>Post</label> 
+       <textarea type="text" value={post}onChange ={(event)=> setPost(event.target.value) } />
        <button type='submit' >create a post </button>
     </form>
 

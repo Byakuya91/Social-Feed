@@ -1,27 +1,54 @@
 import React, { useState } from 'react';
 import "./CustomButton.css";
+import App from '../../App';
 
 
 const CustomButton = (props) => {
 
     // state variables for updating the button whenever it is pushed.
-    const [buttonClass,setButtonClass ] = useState("inactive");
+    const [likeStatus,setLikeStatus ] = useState("neutral");
 
      // function to turn the button to active or inactive
-     function handleClick(){
-       if(buttonClass === "inactive"){
-           setButtonClass("active");
+     function renderLikeButtonStyle(){
+       if(likeStatus === "Liked"){
+          
+          return "active"
+        
+       }
+       else if (likeStatus == "neutral"){
+          
+           return "inactive"
+       
        }
        else{
-           setButtonClass("inactive");
+           return "inactive"
        }
 
      }
-
+     function renderDislikeButtonStyle(){
+        if(likeStatus === "Disliked"){
+           
+           return "dislike"
+         
+        }
+        else if (likeStatus == "neutral"){
+           
+            return "inactive"
+        
+        }
+        else{
+            return "inactive"
+        }
+ 
+      }
     return ( 
 
       <div>
-          <button className={buttonClass}  onClick={handleClick}>{props.message}</button>
+          {/* {likeStatus === "Liked" ? <buttonClass style ="active">Liked!</buttonClass> : null} */}
+          <button onClick = {()=> setLikeStatus("Liked")} className={renderLikeButtonStyle()}>Like
+          </button>
+          <button onClick = {()=> setLikeStatus("Disliked")} className={renderDislikeButtonStyle()}>Disliked
+          </button>
       </div>
 
      );

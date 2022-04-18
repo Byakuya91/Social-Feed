@@ -9,13 +9,20 @@ button{
 /* When the button is not pushed  */
 .inactive{
     background-color: gray;
-
+    
 
 }
 
 /* When the button IS pushed  */
-.active{
+.active {
     background-color: blue;
+    color: white;
+
+
+}
+/* When the button IS pushed  */
+.dislike{
+    background-color: red;
     color: white;
 
 

@@ -4,12 +4,7 @@ import CreatePosts from "./Components/CreatePost/CreatePost";
 import CustomButton from "./Components/CustomButton/CustomButton";
 
 function App() {
-  const [posts, setPosts] = useState([
-    {
-      name: " ",
-      post: " ",
-    },
-  ]);
+  const [posts, setPosts] = useState([]);
   // function to add new posts to DisplayPosts component.
   function addNewPost(post) {
     // create a temporary variable to hold the posts
@@ -18,21 +13,11 @@ function App() {
     // updating the state variable by setting it equal to tempPosts
     setPosts(tempPosts);
   }
-  // create a toggle between buttons
-  const [toggle, setToggle] = useState(false);
 
   return (
     <div>
       <CreatePosts addNewPost={addNewPost} />
       <DisplayPosts parentPosts={posts} />
-
-      <span>
-        <CustomButton message="test button" />
-      </span>
-      <br></br>
-      <span>
-        <CustomButton message="test button2" />
-      </span>
     </div>
   );
 }
