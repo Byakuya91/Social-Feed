@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const CreatePosts = (props) => {
 
     // construct a post object that will enter our post array.
@@ -25,10 +26,10 @@ const CreatePosts = (props) => {
        <input id = 'namelabel' type="text" className='form-control' value={name}  onChange ={(event)=> setName(event.target.value) }/>  
        </div>
         <div className='form-group'>
-        <label for = 'postlabel' style = {{"margin-right": "1rem"}} > <b>Post:</b></label> 
-       <textarea id = 'postlabel' type="text" className='form-control' style={{'margin-top':'1em' }}  value={post}onChange ={(event)=> setPost(event.target.value) } />   
+        <label for = 'postlabel' style = {{"margin-right": "2rem"}} > <b>Post:</b></label> 
+       <textarea id = 'postlabel' type="text" className='form-control' className= "post-area-field  " style={{'margin-top':'1em' }}  value={post}onChange ={(event)=> setPost(event.target.value) } />   
         </div>
-       <button type='submit' style={{'margin-top':'1em' }} className='btn btn-primary'>create a post </button>
+       <button type='submit' style={{'margin-top':'1em' }} className='btn btn-primary' className = "button-status" className = "submit-button" >  <b> create a post</b> </button>
     </form>
 
 

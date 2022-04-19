@@ -1,13 +1,88 @@
+
+/*  Styles for the border */
 .border-box{
     border: 1px;
-    border-style:solid;
+    border-style: solid  ;
     border-color: black;
     margin: 1em;
     padding: 1em;
+    border-radius: 25px;
+    background: cornsilk;
 
 
 }
 
+/* Button status for post */
 .button-status:hover{
-    
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     border-color: blue;
 }
+
+/*  Like and Dislike button */
+.toggle-button{
+   
+    text-align: center;
+    display: inline;
+    font-size: 17px;
+
+  
+}
+
+/* Styling for the creating a post button */
+.submit-button{
+    padding:10px;
+    font-size: 16px;
+  
+
+
+
+
+
+}
+
+/* When the button is not pushed  */
+.inactive{
+    background-color: gray;
+   
+    
+
+}
+
+/* When the button IS pushed  */
+.active {
+    background-color: blue;
+    color: white;
+    
+
+
+}
+/* When the button IS pushed  */
+.dislike{
+    background-color: red;
+    color: white;
+
+
+}
+
+/* Adjusting the text field to fill the div */
+
+.post-area-field{
+    width: 593px;
+    height: 214px;
+}
+
+/* NavBar styles  */
+.Navbar-font{
+    font-style: italic;
+}
+
+.Navbar-position{
+    position: relative;
+    left: 26px;
+}
+
+/* text settings  */
+
+/* .post-text{
+    font-family: ;
+} */
