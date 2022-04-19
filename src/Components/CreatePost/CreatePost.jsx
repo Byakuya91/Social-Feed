@@ -14,21 +14,21 @@ const CreatePosts = (props) => {
             name: name,
             post: post
         };
-        // console.log(newEntry);
+       // adds the post to our array. 
         props.addNewPost(newEntry);
     }
 
     return ( 
     <form onSubmit={handleSubmit}> 
        <div className='form-group'>
-       <labeL style = {{"margin-right": "1rem"}}>Name</labeL> 
-       <input type="text" className='form-control' value={name}  onChange ={(event)=> setName(event.target.value) }/>  
+       <label for = 'namelabel' style = {{"margin-right": "1rem"}}> <b>Name:</b></label> 
+       <input id = 'namelabel' type="text" className='form-control' value={name}  onChange ={(event)=> setName(event.target.value) }/>  
        </div>
         <div className='form-group'>
-        <label style = {{"margin-right": "1rem"}} >Post</label> 
-       <textarea type="text" className='form-control' style={{'margin-top':'1em' }}  value={post}onChange ={(event)=> setPost(event.target.value) } />   
+        <label for = 'postlabel' style = {{"margin-right": "1rem"}} > <b>Post:</b></label> 
+       <textarea id = 'postlabel' type="text" className='form-control' style={{'margin-top':'1em' }}  value={post}onChange ={(event)=> setPost(event.target.value) } />   
         </div>
-       <button type='submit'  className='btn btn-primary'>create a post </button>
+       <button type='submit' style={{'margin-top':'1em' }} className='btn btn-primary'>create a post </button>
     </form>
 
 
