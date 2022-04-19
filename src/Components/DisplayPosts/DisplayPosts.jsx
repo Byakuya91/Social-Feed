@@ -13,7 +13,7 @@ const DisplayPosts = (props) => {
       {props.parentPosts.map((post)=>{
           return(
             <div>
-              <h3>  {post.name}</h3>
+              <h3 className='name-text'>  {post.name}</h3>
               <p className='post-text'>  {post.post}</p>
               <CustomButton></CustomButton>
             </div>

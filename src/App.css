@@ -81,7 +81,7 @@
     left: 26px;
 }
 
-/* text settings  */
+/* text settings for name and post entry */
 
 .post-text{
     font-family:Arial, Helvetica, sans-serif;
@@ -91,4 +91,8 @@
     width: 284px;
 
 
+}
+
+.name-text{
+    font-family:Arial, Helvetica, sans-serif;
 }

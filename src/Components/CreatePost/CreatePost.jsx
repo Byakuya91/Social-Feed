@@ -23,13 +23,13 @@ const CreatePosts = (props) => {
     <form onSubmit={handleSubmit}> 
        <div className='form-group'>
        <label for = 'namelabel' style = {{"margin-right": "1rem"}}> <b>Name:</b></label> 
-       <input id = 'namelabel' type="text" className='form-control' className = "name-text-size" value={name}  onChange ={(event)=> setName(event.target.value) }/>  
+       <input id = 'namelabel' type="text" className='form-control' className = "name-text-size" placeholder='Please Enter your name.' value={name}  onChange ={(event)=> setName(event.target.value) }/>  
        </div>
         <div className='form-group'>
         <label for = 'postlabel' style = {{"margin-right": "2rem"}} > <b>Post:</b></label> 
-       <textarea id = 'postlabel' type="text" className='form-control' className= "post-area-field  " style={{'margin-top':'1em' }}  value={post}onChange ={(event)=> setPost(event.target.value) } />   
+       <textarea id = 'postlabel' type="text" className='form-control' className= "post-area-field  " style={{'margin-top':'1em' }} placeholder='Please Enter your post.'  value={post}onChange ={(event)=> setPost(event.target.value) } />   
         </div>
-       <button type='submit' style={{'margin-top':'1em' }} className='btn btn-primary' className = "button-status" className = "submit-button" >  <b> create a post</b> </button>
+       <button type='submit' style={{'margin-top':'1em' }} className='btn btn-primary' className = "button-status" className = "submit-button"  >  <b> create a post</b> </button>
     </form>
 
 
