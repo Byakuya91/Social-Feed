@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import CreatePosts from "./Components/CreatePost/CreatePost";
-import CustomButton from "./Components/CustomButton/CustomButton";
+import "./App.css";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -15,9 +15,19 @@ function App() {
   }
 
   return (
-    <div>
-      <CreatePosts addNewPost={addNewPost} />
-      <DisplayPosts parentPosts={posts} />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-mid-6">
+          <div className="border-box">
+            <CreatePosts addNewPost={addNewPost} />
+          </div>
+        </div>
+        <div className="col-mid-6">
+          <div className="border-box">
+            <DisplayPosts parentPosts={posts} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

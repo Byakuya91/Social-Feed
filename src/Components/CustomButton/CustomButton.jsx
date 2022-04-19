@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./CustomButton.css";
-import App from '../../App';
+// import App from '../../App';
 
 
 const CustomButton = (props) => {
@@ -45,9 +45,9 @@ const CustomButton = (props) => {
 
       <div>
           {/* {likeStatus === "Liked" ? <buttonClass style ="active">Liked!</buttonClass> : null} */}
-          <button onClick = {()=> setLikeStatus("Liked")} className={renderLikeButtonStyle()}>Like
+          <button onClick = {()=> setLikeStatus("Liked")} className ='toggle-button' className={renderLikeButtonStyle()}>Like
           </button>
-          <button onClick = {()=> setLikeStatus("Disliked")} className={renderDislikeButtonStyle()}>Disliked
+          <button onClick = {()=> setLikeStatus("Disliked")}className ='toggle-button' className={renderDislikeButtonStyle()}>Disliked
           </button>
       </div>
 
