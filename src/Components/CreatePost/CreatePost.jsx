@@ -23,7 +23,7 @@ const CreatePosts = (props) => {
     <form onSubmit={handleSubmit}> 
        <div className='form-group'>
        <label for = 'namelabel' style = {{"margin-right": "1rem"}}> <b>Name:</b></label> 
-       <input id = 'namelabel' type="text" className='form-control' value={name}  onChange ={(event)=> setName(event.target.value) }/>  
+       <input id = 'namelabel' type="text" className='form-control' className = "name-text-size" value={name}  onChange ={(event)=> setName(event.target.value) }/>  
        </div>
         <div className='form-group'>
         <label for = 'postlabel' style = {{"margin-right": "2rem"}} > <b>Post:</b></label> 

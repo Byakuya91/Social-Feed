@@ -83,6 +83,12 @@
 
 /* text settings  */
 
-/* .post-text{
-    font-family: ;
-} */
+.post-text{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.name-text-size{
+    width: 284px;
+
+
+}

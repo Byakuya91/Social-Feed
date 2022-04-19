@@ -14,7 +14,7 @@ const DisplayPosts = (props) => {
           return(
             <div>
               <h3>  {post.name}</h3>
-              <p>  {post.post}</p>
+              <p className='post-text'>  {post.post}</p>
               <CustomButton></CustomButton>
             </div>
              
